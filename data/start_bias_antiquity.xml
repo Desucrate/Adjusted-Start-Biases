@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
+  <!--Generally gives civs a score of 10 or 20, based off the vanilla /base-standards/data/leaders.xml reasoning. Unlike vanilla, civs generally have stronger biases than leaders.-->
+  <!--Score works by counting each instance of valid bias tiles within the starting region, multiplying each by score and dividing by number of tiles from spawn.-->
   
   <StartBiasBiomes>
     <Update>

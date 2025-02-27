@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
+  <!--Generally gives leaders a score of 5 or 15, based off the vanilla /base-standards/data/leaders.xml reasoning. Unlike vanilla, civs generally have stronger biases than leaders.
+  Leaders have strong biases of 15 or 20 when important for their gameplay bonuses.-->
+  <!--Score works by counting each instance of valid bias tiles within the starting region, multiplying each by score and dividing by number of tiles from spawn.-->
   
   <StartBiasBiomes>
     <Update>
@@ -29,6 +32,7 @@
   </StartBiasBiomes>
   
   <StartBiasTerrains>
+    <!--Gives Pachacuti hills for Terrace Farm viability. If terrace farms are changed, may not need to exist anymore-->
     <Row>
       <LeaderType>LEADER_PACHACUTI</LeaderType>
       <TerrainType>TERRAIN_HILL</TerrainType>
