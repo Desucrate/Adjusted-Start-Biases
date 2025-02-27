@@ -35,6 +35,11 @@
   </StartBiasBiomes>
   
   <StartBiasTerrains>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_AKSUM"/>
+      <Set Score="10"/>
+    </Update>
+    
     <Row>
       <CivilizationType>CIVILIZATION_HAN</CivilizationType>
       <TerrainType>TERRAIN_MOUNTAIN</TerrainType>
@@ -45,10 +50,6 @@
       <TerrainType>TERRAIN_HILL</TerrainType>
       <Score>10</Score>
     </Row>
-    <Update>
-      <Where CivilizationType="CIVILIZATION_AKSUM"/>
-      <Set Score="10"/>
-    </Update>
   </StartBiasTerrains>
   
   <StartBiasFeatureClasses>
@@ -74,14 +75,15 @@
   </StartBiasRivers>
   
   <StartBiasAdjacentToCoasts>
-    <Row>
-      <CivilizationType>CIVILIZATION_ROME</CivilizationType>
-      <Score>150</Score>
-    </Row>
     <Update>
       <Where CivilizationType="CIVILIZATION_AKSUM"/>
       <Set Score="200"/>
     </Update>
+    
+    <Row>
+      <CivilizationType>CIVILIZATION_ROME</CivilizationType>
+      <Score>150</Score>
+    </Row>
   </StartBiasAdjacentToCoasts>
   
 </Database>
