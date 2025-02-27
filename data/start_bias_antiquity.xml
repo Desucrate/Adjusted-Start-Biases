@@ -69,7 +69,7 @@
   <StartBiasAdjacentToCoasts>
     <Row>
       <CivilizationType>CIVILIZATION_ROME</CivilizationType>
-      <Score>10</Score>
+      <Score>150</Score>
     </Row>
     <Update>
       <Where CivilizationType="CIVILIZATION_AKSUM"/>
