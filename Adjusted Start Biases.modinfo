@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="desucrate_start_biases" version="1"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>Adjusted Start Biases</Name>
+		<Description>Changes the strength of start biases for certain civilizations and leaders, TODO REST PLS</Description>
+		<Authors>Desucrate</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+		<Criteria id="antiquity" any="true">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+		</Criteria>
+		<Criteria id="exploration" any="true">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+		</Criteria>
+		<Criteria id="modern">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="game-adjusted-start-biases-always" scope="game" criteria="always">
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/start_bias_leaders.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="game-adjusted-start-biases-antiquity" scope="game" criteria="antiquity">
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/start_bias_antiquity.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="game-adjusted-start-biases-exploration" scope="game" criteria="exploration">
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/start_bias_exploration.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="game-adjusted-start-biases-modern" scope="game" criteria="modern">
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/start_bias_modern.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+</Mod>

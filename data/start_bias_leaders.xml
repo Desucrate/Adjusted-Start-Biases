@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+  <StartBiasBiomes>
+    <Update>
+      <Where LeaderType="LEADER_HATSHEPSUT"/>
+      <Set Score="5"/>
+    </Update>
+  </StartBiasBiomes>
+  <StartBiasTerrains>
+    <Update>
+      <Where LeaderType="LEADER_"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasTerrains>
+  <StartBiasFeatureClasses>
+    <Update>
+      <Where LeaderType="LEADER_"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasFeatureClasses>
+  <StartBiasRivers>
+    <Update>
+      <Where LeaderType="LEADER_"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasRivers>
+  <StartBiasAdjacentToCoasts>
+    <Update>
+      <Where LeaderType="LEADER_"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasAdjacentToCoasts>
+  <StartBiasNaturalWonders>
+    <Update>
+      <Where LeaderType="LEADER_ISABELLA"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasNaturalWonders>
+</Database>

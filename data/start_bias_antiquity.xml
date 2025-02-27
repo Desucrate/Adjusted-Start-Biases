@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+  <StartBiasBiomes>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_EGYPT"/>
+      <Set Score="20"/>
+    </Update>
+  </StartBiasBiomes>
+  <StartBiasTerrains>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasTerrains>
+  <StartBiasFeatureClasses>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasFeatureClasses>
+  <StartBiasRivers>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasRivers>
+  <StartBiasAdjacentToCoasts>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasAdjacentToCoasts>
+  <StartBiasNaturalWonders>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasNaturalWonders>
+</Database>
