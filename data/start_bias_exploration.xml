@@ -70,6 +70,13 @@
     </Row>
   </StartBiasBiomes>
 
+  <StartBiasResources>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_MONGOLIA"/>
+      <Set Score="20"/>
+    </Update>
+  </StartBiasResources>
+  
   <StartBiasTerrains>
     <Update>
       <Where CivilizationType="CIVILIZATION_INCA"/>
