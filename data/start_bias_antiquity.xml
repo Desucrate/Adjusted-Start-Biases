@@ -82,7 +82,7 @@
     
     <Row>
       <CivilizationType>CIVILIZATION_ROME</CivilizationType>
-      <Score>150</Score>
+      <Score>25</Score>
     </Row>
   </StartBiasAdjacentToCoasts>
   
