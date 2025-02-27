@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+  <!--Generally gives civs a score of 10 or 20, based off the vanilla /base-standards/data/leaders.xml reasoning. Unlike vanilla, civs generally have stronger biases than leaders.-->
+  <!--Score works by counting each instance of valid bias tiles within the starting region, multiplying each by score and dividing by number of tiles from spawn.-->
+  
+  <StartBiasBiomes>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_EGYPT"/>
+      <Set Score="20"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_GREECE"/>
+      <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_HAN"/>
+      <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_KHMER"/>
+      <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_MAYA"/>
+      <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_PERSIA"/>
+      <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_ROME"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasBiomes>
+  
+  <StartBiasTerrains>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_AKSUM"/>
+      <Set Score="10"/>
+    </Update>
+    
+    <Row>
+      <CivilizationType>CIVILIZATION_HAN</CivilizationType>
+      <TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+      <Score>10</Score>
+    </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_PERSIA</CivilizationType>
+      <TerrainType>TERRAIN_HILL</TerrainType>
+      <Score>10</Score>
+    </Row>
+  </StartBiasTerrains>
+  
+  <StartBiasFeatureClasses>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_KHMER"/>
+      <Set Score="20"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_MAURYA"/>
+      <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_MAYA"/>
+      <Set Score="20"/>
+    </Update>
+  </StartBiasFeatureClasses>
+  
+  <StartBiasRivers>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_MISSISSIPPIAN"/>
+      <Set Score="15"/>
+    </Update>
+  </StartBiasRivers>
+  
+  <StartBiasAdjacentToCoasts>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_AKSUM"/>
+      <Set Score="200"/>
+    </Update>
+    
+    <Row>
+      <CivilizationType>CIVILIZATION_ROME</CivilizationType>
+      <Score>150</Score>
+    </Row>
+  </StartBiasAdjacentToCoasts>
+  
+</Database>

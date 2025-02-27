@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+  <!--Generally gives leaders a score of 5 or 15, based off the vanilla /base-standards/data/leaders.xml reasoning. Unlike vanilla, civs generally have stronger biases than leaders.
+  Leaders have strong biases of 15 or 20 when important for their gameplay bonuses.-->
+  <!--Score works by counting each instance of valid bias tiles within the starting region, multiplying each by score and dividing by number of tiles from spawn.-->
+  
+  <StartBiasBiomes>
+    <Update>
+      <Where LeaderType="LEADER_CATHERINE"/>
+      <Set Score="15"/>
+    </Update>
+    <Update>
+      <Where LeaderType="LEADER_CONFUCIUS"/>
+      <Set Score="5"/>
+    </Update>
+    <Update>
+      <Where LeaderType="LEADER_HATSHEPSUT"/>
+      <Set Score="5"/>
+    </Update>
+    <Update>
+      <Where LeaderType="LEADER_JOSE_RIZAL"/>
+      <Set Score="5"/>
+    </Update>
+    <Update>
+      <Where LeaderType="LEADER_TRUNG_TRAC"/>
+      <Set Score="15"/>
+    </Update>
+    <Update>
+      <Where LeaderType="LEADER_XERXES"/>
+      <Set Score="5"/>
+    </Update>
+  </StartBiasBiomes>
+  
+  <StartBiasTerrains>
+    <!--Gives Pachacuti hills for Terrace Farm viability. If terrace farms are changed, may not need to exist anymore-->
+    <Row>
+      <LeaderType>LEADER_PACHACUTI</LeaderType>
+      <TerrainType>TERRAIN_HILL</TerrainType>
+      <Score>15</Score>
+    </Row>
+  </StartBiasTerrains>
+  
+  <!--
+  <StartBiasFeatureClasses>
+    <Update>
+      <Where LeaderType="LEADER_"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasFeatureClasses>
+  -->
+  
+  <!--
+  <StartBiasRivers>
+    <Update>
+      <Where LeaderType="LEADER_CHARLEMAGNE"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasRivers>
+  -->
+  
+  <!--
+  <StartBiasAdjacentToCoasts>
+    <Update>
+      <Where LeaderType="LEADER_"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasAdjacentToCoasts>
+  -->
+  
+  <!--lowered NW bias for testing-->
+  <!--
+  <StartBiasNaturalWonders>
+    <Update>
+      <Where LeaderType="LEADER_ISABELLA"/>
+      <Set Score="10"/>
+    </Update>
+  </StartBiasNaturalWonders>
+  -->
+</Database>
