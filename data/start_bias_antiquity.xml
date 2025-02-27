@@ -5,35 +5,75 @@
       <Where CivilizationType="CIVILIZATION_EGYPT"/>
       <Set Score="20"/>
     </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_GREECE"/>
+      <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_HAN"/>
+      <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_KHMER"/>
+      <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_MAYA"/>
+      <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_PERSIA"/>
+      <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_ROME"/>
+      <Set Score="10"/>
+    </Update>
   </StartBiasBiomes>
   <StartBiasTerrains>
+    <Row>
+      <CivilizationType>CIVILIZATION_HAN</CivilizationType>
+      <TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+      <Score>10</Score>
+    </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_PERSIA</CivilizationType>
+      <TerrainType>TERRAIN_HILL</TerrainType>
+      <Score>10</Score>
+    </Row>
     <Update>
-      <Where CivilizationType="CIVILIZATION_"/>
+      <Where CivilizationType="CIVILIZATION_AKSUM"/>
       <Set Score="10"/>
     </Update>
   </StartBiasTerrains>
   <StartBiasFeatureClasses>
     <Update>
-      <Where CivilizationType="CIVILIZATION_"/>
+      <Where CivilizationType="CIVILIZATION_KHMER"/>
+      <Set Score="20"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_MAURYA"/>
       <Set Score="10"/>
+    </Update>
+    <Update>
+      <Where CivilizationType="CIVILIZATION_MAYA"/>
+      <Set Score="20"/>
     </Update>
   </StartBiasFeatureClasses>
   <StartBiasRivers>
     <Update>
-      <Where CivilizationType="CIVILIZATION_"/>
-      <Set Score="10"/>
+      <Where CivilizationType="CIVILIZATION_MISSISSIPPIAN"/>
+      <Set Score="15"/>
     </Update>
   </StartBiasRivers>
   <StartBiasAdjacentToCoasts>
+    <Row>
+      <CivilizationType>CIVILIZATION_ROME</CivilizationType>
+      <Score>10</Score>
+    </Row>
     <Update>
-      <Where CivilizationType="CIVILIZATION_"/>
-      <Set Score="10"/>
+      <Where CivilizationType="CIVILIZATION_AKSUM"/>
+      <Set Score="200"/>
     </Update>
   </StartBiasAdjacentToCoasts>
-  <StartBiasNaturalWonders>
-    <Update>
-      <Where CivilizationType="CIVILIZATION_"/>
-      <Set Score="10"/>
-    </Update>
-  </StartBiasNaturalWonders>
 </Database>
