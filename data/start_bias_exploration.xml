@@ -2,7 +2,6 @@
 <Database>
   <!--Generally gives civs a score of 10 or 20, based off the vanilla /base-standards/data/leaders.xml reasoning. Unlike vanilla, civs generally have stronger biases than leaders.-->
   <!--Score works by counting each instance of valid bias tiles within the starting region, multiplying each by score and dividing by number of tiles from spawn.-->
-  <!--Ming not currently modified-->
   
   <StartBiasBiomes>
     <Update>
@@ -68,6 +67,11 @@
       <BiomeType>BIOME_DESERT</BiomeType>
       <Score>5</Score>
     </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_MING</CivilizationType>
+      <BiomeType>BIOME_GRASSLAND</BiomeType>
+      <Score>10</Score>
+    </Row>
   </StartBiasBiomes>
 
   <StartBiasResources>
@@ -99,6 +103,11 @@
       <CivilizationType>CIVILIZATION_SPAIN</CivilizationType>
       <TerrainType>TERRAIN_HILL</TerrainType>
       <Score>15</Score>
+    </Row>
+    <Row>
+      <CivilizationType>CIVILIZATION_MING</CivilizationType>
+      <TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+      <Score>10</Score>
     </Row>
   </StartBiasTerrains>
 
