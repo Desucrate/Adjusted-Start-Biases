@@ -1,39 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
+  
   <StartBiasBiomes>
+    <Update>
+      <Where LeaderType="LEADER_CATHERINE"/>
+      <Set Score="15"/>
+    </Update>
+    <Update>
+      <Where LeaderType="LEADER_CONFUCIUS"/>
+      <Set Score="5"/>
+    </Update>
     <Update>
       <Where LeaderType="LEADER_HATSHEPSUT"/>
       <Set Score="5"/>
     </Update>
-  </StartBiasBiomes>
-  <StartBiasTerrains>
     <Update>
-      <Where LeaderType="LEADER_"/>
-      <Set Score="10"/>
+      <Where LeaderType="LEADER_JOSE_RIZAL"/>
+      <Set Score="5"/>
     </Update>
+    <Update>
+      <Where LeaderType="LEADER_TRUNG_TRAC"/>
+      <Set Score="15"/>
+    </Update>
+    <Update>
+      <Where LeaderType="LEADER_XERXES"/>
+      <Set Score="5"/>
+    </Update>
+  </StartBiasBiomes>
+  
+  <StartBiasTerrains>
+    <Row>
+      <LeaderType>LEADER_PACHACUTI</LeaderType>
+      <TerrainType>TERRAIN_HILL</TerrainType>
+      <Score>15</Score>
+    </Row>
   </StartBiasTerrains>
+  
+  <!--
   <StartBiasFeatureClasses>
     <Update>
       <Where LeaderType="LEADER_"/>
       <Set Score="10"/>
     </Update>
   </StartBiasFeatureClasses>
+  -->
+  
+  <!--
   <StartBiasRivers>
     <Update>
-      <Where LeaderType="LEADER_"/>
+      <Where LeaderType="LEADER_CHARLEMAGNE"/>
       <Set Score="10"/>
     </Update>
   </StartBiasRivers>
+  -->
+  
+  <!--
   <StartBiasAdjacentToCoasts>
     <Update>
       <Where LeaderType="LEADER_"/>
       <Set Score="10"/>
     </Update>
   </StartBiasAdjacentToCoasts>
+  -->
+  
+  <!--lowered NW bias for testing-->
+  <!--
   <StartBiasNaturalWonders>
     <Update>
       <Where LeaderType="LEADER_ISABELLA"/>
       <Set Score="10"/>
     </Update>
   </StartBiasNaturalWonders>
+  -->
 </Database>

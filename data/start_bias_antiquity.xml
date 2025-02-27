@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
+  
   <StartBiasBiomes>
     <Update>
       <Where CivilizationType="CIVILIZATION_EGYPT"/>
@@ -30,6 +31,7 @@
       <Set Score="10"/>
     </Update>
   </StartBiasBiomes>
+  
   <StartBiasTerrains>
     <Row>
       <CivilizationType>CIVILIZATION_HAN</CivilizationType>
@@ -46,6 +48,7 @@
       <Set Score="10"/>
     </Update>
   </StartBiasTerrains>
+  
   <StartBiasFeatureClasses>
     <Update>
       <Where CivilizationType="CIVILIZATION_KHMER"/>
@@ -60,12 +63,14 @@
       <Set Score="20"/>
     </Update>
   </StartBiasFeatureClasses>
+  
   <StartBiasRivers>
     <Update>
       <Where CivilizationType="CIVILIZATION_MISSISSIPPIAN"/>
       <Set Score="15"/>
     </Update>
   </StartBiasRivers>
+  
   <StartBiasAdjacentToCoasts>
     <Row>
       <CivilizationType>CIVILIZATION_ROME</CivilizationType>
@@ -76,4 +81,5 @@
       <Set Score="200"/>
     </Update>
   </StartBiasAdjacentToCoasts>
+  
 </Database>
